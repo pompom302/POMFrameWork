@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Free CRM Application Test Automation Test Suite" >
+
+	<listeners>
+		<listener class-name="com.qa.extentReportListener.ExtentReportListener" />
+	</listeners>
+	
+  <test name="Free CRM App Test Cases">
+  
+  <!-- order of execution will be same as written below in classes -->
+     <classes>
+     	<class name="com.crm.qa.testcases.LoginPageTest"/>
+     	<class name = "com.crm.qa.testcases.HomePageTest"/>
+      	<class name="com.crm.qa.testcases.ContactsPageTest"/>      
+     </classes>
+     </test><!-- test -->
+</suite> <!-- Suite -->
+<!--parallel execution: <suite name="TestSuite" thread-count="3" parallel="methods" >  -->
